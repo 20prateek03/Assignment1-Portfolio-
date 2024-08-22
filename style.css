@@ -86,7 +86,7 @@ a{
 }
 
 
- #page1{
+ /* #page1{
     position: relative;
     display: flex;
     flex-wrap:wrap;
@@ -154,4 +154,92 @@ a{
    width:70%;
    margin-top: 50px;
 
+} */
+
+
+
+#page1 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+/* Right section styling */
+#right {
+   flex: 1;
+   min-width: 300px;
+   margin: 10px;
+   background-color: rgb(233, 246, 249);
+   padding: 20px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+#text1 h1 {
+   font-size: 2.5em;
+   margin-bottom: 10px;
+   font-weight: 700;
+}
+
+#text1 h4 {
+   font-size: 2em;
+}
+
+/* Left section styling */
+#left {
+   flex: 1;
+   min-width: 300px;
+   margin: 10px;
+}
+
+.box {
+   background-color: rgb(233, 246, 249);
+   margin-bottom: 20px;
+   padding: 20px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.box h1 {
+   font-size: 2em;
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-style: italic;
+}
+.box h2 {
+   font-size: 1.5em;
+   margin-bottom: 10px;
+   font-weight: 700;
+}
+
+.box p {
+   font-size: 1.25em;
+   font-weight: 200;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+   #page1 {
+       flex-direction: column;
+   }
+}
+
+@media (max-width: 480px) {
+   #text1 h1 {
+       font-size: 1.5em;
+   }
+
+   #text1 h4 {
+       font-size: 1em;
+   }
+
+   .box h1 {
+       font-size: 1.4em;
+   }
+
+   .box h2 {
+      font-size: 1.2em;
+  }
+
+   .box p {
+       font-size: 1em;
+   }
 }

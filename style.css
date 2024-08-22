@@ -22,43 +22,84 @@ a{
     color: beige;
 }
 
-.foot-panel2{
-    margin-top: 10px;
-    background-color: #222f3d;
-    color:white;
-    height: 5vh ;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 0.85rem;
-    
+.foot-panel2 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: #222f3d;
+   color: #fff;
+   font-size: 1em;
 }
-.copyright{
-    padding-top: 5px;
-    
+
+.copyright {
+   flex: 1;
+   text-align: left;
+   margin-bottom: 10px;
 }
-.social
-{
-    margin-left: 100px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
+
+.social {
+   flex: 1;
+   text-align: right;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 20px;
 }
-.instagram{
-    padding-top: 5px;
-    margin-left: 10px;
+
+.social div {
+   display: inline-block;
 }
+
+.social a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+   .foot-panel2 {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .copyright {
+       text-align: center;
+       margin-bottom: 20px;
+   }
+
+   .social {
+       justify-content: center;
+   }
+
+   .social div {
+       margin: 0 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .social a {
+       font-size: 1.2em;
+   }
+}
+
+
  #page1{
     position: relative;
+    display: flex;
+    flex-wrap:wrap;
     height: 90vh;
     width: 95vw;
     background-color: rgb(233, 246, 249);
     margin: 20px  30px 20px;
     
     
-    /* padding: 50px; */
+    padding: 50px; 
  }
  #page1>#left{
+   flex: 1;
     position: absolute;
     right: 10%;
     height: 90%;
@@ -77,19 +118,19 @@ a{
     margin-bottom: 5px;
  }
  #left>.box>h4{
-    font-size: 20px;
+    font-size: 1.25em;
     
  }
  #left>.box>h2{
-   font-size: 20px;
+   font-size: 1.5em;
    margin-right: 15px;
    font-weight: 600;
 }
  #left>.box>h1{
-    font-size: 30px;
+    font-size: 2em;
  }
  #left>.box>p{
-    font-size: 20px;
+    font-size: 1.25em;
     margin-left: 15px;
     font-weight: 400;
  }
@@ -101,15 +142,16 @@ a{
    z-index:9;
 }
 #text1>h1{
-   font-size: 60px;
+   font-size: 3em;
    margin-top: 20px;
    font-weight: 900;
    color: rgb(11, 11, 11);
 }
 #text1>h4{
-   font-size: 25px;
+   font-size:2em;
    color: #000;
    font-weight: 80;
    width:70%;
    margin-top: 50px;
+
 }
